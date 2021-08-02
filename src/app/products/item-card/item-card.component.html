@@ -1,0 +1,26 @@
+<div class="">
+  <nz-card nzHoverable class="prod-card" [nzBodyStyle]="{padding: '0px !important'}" [nzCover]="coverTemplate">
+    <div class="pc-price">Rs. {{item?.default?.price}} </div>
+    <div class="pc-reward">
+      <app-reward [number]='item?.default?.rewards_point'></app-reward>
+    </div>
+    <div class="pc-name">{{item?.default?.name}}</div>
+    <div class="c-bl" *ngIf='item?.variations.length > 1;else Defaultvariation'>
+      <nz-select [ngModel]='item.variations[0].variation'>
+        <nz-option *ngFor='let variation of item?.variations' nzLabel='{{variation.variation}}'
+          nzValue='{{variation.variation}}'>
+          {{variation?.variation}}
+        </nz-option>
+      </nz-select>
+    </div>
+    <ng-template #Defaultvariation>
+      <div class="c-bl" >{{item?.default?.variation}}</div>
+    </ng-template>
+    <button class="pc-button" [disabled]='!item?.default?.purchasable'>Add to Card</button>
+  </nz-card>
+  <ng-template #coverTemplate>
+    <img (click)='openItem()' alt="{{item?.default?.image?.alt}}" src="{{item?.default?.image?.src}}" />
+
+
+  </ng-template>
+</div>

@@ -1,0 +1,55 @@
+
+.ant-card-body {
+  padding: 0px !important;
+}
+
+.prod-card {
+  border: 1px solid #cccccc;
+  max-width: 13rem;
+  margin: 0.5rem;
+  padding: 10px;
+}
+
+.pc-price {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.pc-reward {
+  font-size: 0.7rem;
+  margin: 0.4rem 0;
+}
+
+.pc-name {
+  font-size: 0.8rem;
+  height: 3.2rem;
+}
+
+.pc-button {
+  color: #d6273d;
+    width: 9rem;
+    padding: 0 1.3rem;
+    background: none;
+    border: 1px solid #d6273d;
+    border-radius: 0.2rem;
+    height: 5vh;
+}
+
+.prod-card .ant-card-body {
+  padding: 0px !important;
+}
+
+.product-item {
+    .ant-card-body {
+        padding: 0px !important;  // number can be 0 onwards
+  }
+}
+
+nz-select {
+  width: 9rem;
+}
+
+.c-bl {
+  color: #3985e6;
+  margin: 0.5rem 0;
+}
