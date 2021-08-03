@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 // components
 import { ProductsComponent } from './products.component';
-import { ItemCardComponent } from './item-card/item-card.component';
-import { RewardComponent } from './reward/reward.component';
+import { ItemCardComponent } from './components/item-card/item-card.component';
+import { RewardComponent } from './components/reward/reward.component';
 
 // services
 import { ProductsService } from './products.service';

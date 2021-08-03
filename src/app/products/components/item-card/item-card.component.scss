@@ -4,25 +4,29 @@
 }
 
 .prod-card {
-  border: 1px solid #cccccc;
+  border: 1px solid #ececec;
   max-width: 13rem;
+  width: 11rem;
   margin: 0.5rem;
-  padding: 10px;
+  padding: 0 5px;
+  color: black;
 }
 
 .pc-price {
   font-weight: 600;
   font-size: 1.1rem;
+  margin: 0 .2rem;
 }
 
 .pc-reward {
   font-size: 0.7rem;
-  margin: 0.4rem 0;
+  margin: 0.4rem 0.2rem;
 }
 
 .pc-name {
   font-size: 0.8rem;
   height: 3.2rem;
+  margin: 0 .2rem;
 }
 
 .pc-button {
@@ -32,7 +36,8 @@
     background: none;
     border: 1px solid #d6273d;
     border-radius: 0.2rem;
-    height: 5vh;
+    height: 4vh;
+    margin: 0.5rem;
 }
 
 .prod-card .ant-card-body {
@@ -47,9 +52,25 @@
 
 nz-select {
   width: 9rem;
+  margin: 0 0.52rem
 }
 
 .c-bl {
   color: #3985e6;
   margin: 0.5rem 0;
 }
+
+.card-img {
+  width: 7rem;
+    height: 7rem;
+    margin: auto;
+    margin-top: 1.2rem;
+}
+
+.default-var {
+  margin: 0.8rem 0;
+}
+
+  .ant-card-body {
+    padding: 10px !important;
+  }

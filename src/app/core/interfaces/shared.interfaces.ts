@@ -41,3 +41,8 @@ export interface DefaultItemImage {
   name: string;
   alt: string;
 }
+
+export interface PagingConfig {
+  page: number;
+  per_page: number;
+}

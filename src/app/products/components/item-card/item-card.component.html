@@ -1,5 +1,5 @@
 <div class="">
-  <nz-card nzHoverable class="prod-card" [nzBodyStyle]="{padding: '0px !important'}" [nzCover]="coverTemplate">
+  <nz-card nzHoverable class="prod-card" [nzBodyStyle]="{padding: 0}" [nzCover]="coverTemplate">
     <div class="pc-price">Rs. {{item?.default?.price}} </div>
     <div class="pc-reward">
       <app-reward [number]='item?.default?.rewards_point'></app-reward>
@@ -14,12 +14,12 @@
       </nz-select>
     </div>
     <ng-template #Defaultvariation>
-      <div class="c-bl" >{{item?.default?.variation}}</div>
+      <div class="c-bl default-var" >{{item?.default?.variation}}</div>
     </ng-template>
     <button class="pc-button" [disabled]='!item?.default?.purchasable'>Add to Card</button>
   </nz-card>
   <ng-template #coverTemplate>
-    <img (click)='openItem()' alt="{{item?.default?.image?.alt}}" src="{{item?.default?.image?.src}}" />
+    <img (click)='openItem()' class="card-img" alt="{{item?.default?.image?.alt}}" src="{{item?.default?.image?.src}}" />
 
 
   </ng-template>

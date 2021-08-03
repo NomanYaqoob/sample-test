@@ -27,6 +27,8 @@ export class ItemDetailComponent implements OnInit {
           this.item.default = newVariation;
         }
       }
+    }, (err) => {
+      console.log(err);
     })
   }
 
@@ -35,7 +37,9 @@ export class ItemDetailComponent implements OnInit {
       .subscribe(item => {
         this.item = item;
         this.defaultVariation = this.item.default;
-      })
+      }, (err) => {
+        console.log(err);
+      });
   }
 
   addToCart() {

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { fromEvent } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isCollapsed = false;
 
-  change(ev){
+  ngOnInit() {
+  }
+
+  change(ev) {
 
   }
 }

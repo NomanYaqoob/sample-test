@@ -1,25 +1,36 @@
 <nz-layout class="app-layout">
   <nz-header>
     <div class="app-header">
-      <!-- <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-        <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
-      </span> -->
+      <div class="header-logo">
+        <img src="https://airliftexpress.com/assets/img/logo.svg" alt="" routerLink='/'>
+      </div>
+      <div class="header-location">
+        <i nz-icon nzType="aim" nzTheme="outline"></i>
+        <span class="static">Deliver at</span>
+        <i nz-icon nzType="down" nzTheme="outline"></i>
+      </div>
+      <div class="header-search">
+        <nz-select nzSuffixIcon="search">
+        </nz-select>
+      </div>
+      <div class="header-acc">
+        <span class="static">My Account / Menu</span>
+        <i nz-icon nzType="down" nzTheme="outline"></i>
+      </div>
+      <div class="header-cart">
+        <i nz-icon nzType="shopping-cart" nzTheme="outline"></i>
+        <span>My Cart</span>
+      </div>
     </div>
   </nz-header>
   <nz-layout class="inner-layout">
     <nz-sider class="menu-sidebar" nzTheme="light" nzCollapsible nzWidth="256px" nzBreakpoint="md"
       [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
-      <div class="sidebar-logo">
-        <img src="https://airliftexpress.com/assets/img/logo.svg" alt="logo">
-      </div>
+      <p class="sidebar-cat">Categories</p>
       <ul nz-menu [nzMode]="'vertical'">
-        <li nz-submenu nzTitle="Beverages" routerLink='category/beverages' routerLinkActive='active'
-          [routerLinkActiveOptions]="{exact:
-          true}">
+        <li nz-submenu nzTitle="Beverages" routerLink='category/beverages' routerLinkActive='active'>
         </li>
-        <li nz-submenu nzTitle="Organic" routerLink='category/organic' routerLinkActive='active'
-          [routerLinkActiveOptions]="{exact:
-          true}">
+        <li nz-submenu nzTitle="Organic" routerLink='category/organic' routerLinkActive='active'>
         </li>
       </ul>
     </nz-sider>

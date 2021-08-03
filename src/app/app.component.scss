@@ -7,7 +7,8 @@
 
 .app-layout {
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-family: Arial;
 }
 
 .menu-sidebar {
@@ -52,29 +53,95 @@
 nz-header {
   padding: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
 }
+
+nz-sider {
+  box-shadow: none !important;
+}
+
+.header-location{
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  padding: 0 1rem;
+    .static {
+      width: 12rem;
+      margin-left: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+}
+
+.header-cart {
+  font-size: 1rem;
+  width: 9rem;
+  color: #d6273d;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  border-right: none !important;
+  i {
+    font-size: 2rem;
+  }
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.header-search nz-select {
+  width: 35rem;
+  margin: 0 1rem;
+}
+    nz-select-top-control {
+      height: 2.5rem;
+    }
 
 .app-header {
   position: relative;
+  display: flex;
   height: 64px;
   padding: 0;
+  cursor: pointer;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,21,41,.08);
+  div {
+    border-left: 1px solid #ece7e7;
+  border-right: 1px solid #ece7e7;
+  }
+  .header-logo {
+    width: 9rem;
+    text-align: center;
+  }
 }
 
-nz-content {
-  margin: 24px;
+.header-acc {
+  display: flex;
+    width: 14rem;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 0.5rem;
+  .static {
+    width: 11rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }
+
 
 .inner-content {
-  padding: 24px;
+  margin: 0 24px;
+
+  padding-top: 20px;
   background: #fff;
   height: 100v;
 }
 
 .inner-layout {
-  max-width: 80rem;
+  max-width: 90rem;
   margin: auto;
 }
 
@@ -90,5 +157,15 @@ nz-content {
   color: red !important;
 }
 
+.sidebar-cat {
+  font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+    margin:1.2rem 1.2rem 0 1.2rem;
+}
+
+nz-sider li {
+  height: 24px;
+}
 
 

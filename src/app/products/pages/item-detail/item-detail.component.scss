@@ -10,6 +10,9 @@
 
 .prod-name {
   font-weight: 700;
+  height: 5rem;
+  width: 28rem;
+    max-width: 28rem;
 }
 
 .prod-price {
@@ -42,6 +45,7 @@
 }
 
 .prod-var {
+  cursor: pointer;
   border: 2px solid blue;
     border: 1px solid #333;
     border-radius: .1875rem;
@@ -62,6 +66,13 @@
   font-size: 1rem;
   img {
     width: 1.2rem;
+  }
+}
+
+.prod-desc {
+  margin: 1rem;
+  h2 {
+    font-weight: bold;
   }
 }
 

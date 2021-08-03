@@ -8,17 +8,20 @@
     <p class="reward-wrapper">
       <app-reward [number]='item?.default?.rewards_point'></app-reward>
     </p>
-    <div>
-      Available in
-      <div *ngFor='let variation of item?.variations'>
-        <span class="prod-var" (click)='changeVariation(variation)' [ngClass]="{'prod-var-active': variation.id === item.default?.id}">{{variation?.variation}}</span>
-      </div>
+    <div class="detail-variation">
+      <p>
+        Available in
+      </p>
+      <span (click)='changeVariation(variation)' class="prod-var"
+        [ngClass]="{'prod-var-active': variation.id === item.default?.id}" *ngFor='let variation of item?.variations'>
+        <span>{{variation?.variation}}</span>
+      </span>
     </div>
     <button type="button" class="prod-atc" (click)='addToCart()'>Add to Cart</button>
   </div>
 </div>
 <div class="row mt-1">
-  <div class="col ">
+  <div class="col prod-desc">
     <h2>Description</h2>
     <p>{{item?.default?.description}}</p>
   </div>

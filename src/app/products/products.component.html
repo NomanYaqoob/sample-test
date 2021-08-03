@@ -1,6 +1,11 @@
-<div>
-  <div class="product-item" *ngFor='let item of items'>
-    <app-item-card [item]='item'></app-item-card>
-  </div>
-</div>
+<div *ngIf='items.length'>
 
+  <div class="title">{{category | titlecase}}</div>
+
+  <div class="prod-wrapper" >
+    <div class="product-item" *ngFor='let item of items'>
+      <app-item-card [item]='item'></app-item-card>
+    </div>
+  </div>
+
+</div>
